@@ -15,7 +15,7 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
   disabled,
 }) => {
   return (
-    <Button className="w-full rounded-lg" onSubmit={onClick} disabled={isLoading || disabled}>
+    <Button className="w-full rounded-xl" onSubmit={onClick} disabled={isLoading || disabled}>
       {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
       {children}
     </Button>
